@@ -93,8 +93,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.slider{
+	display:none;
+}
+.collapseSlider{
+	display:none;
+}
+.sliderExpanded .collapseSlider{
+	display:block;
+}
 
-
+/* Uncomment this to hide the slider when content is expanded
+.sliderExpanded .expandSlider{
+	display:none;
+}
+*/
 
 
 
