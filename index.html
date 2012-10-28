@@ -16,12 +16,6 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link rel="stylesheet" type="text/css" href="js/shadowbox-3.0.3/shadowbox.css">
-		<script type="text/javascript" src="js/shadowbox-3.0.3/shadowbox.js"></script>
-		<script type="text/javascript">
-		Shadowbox.init({
-       		handleOversize: "resize",
-    	});
-		</script>
 			
     </head>
     <body>
@@ -36,12 +30,13 @@
         	<div id="side_blocks">
         		<figure>
         			<h3>Design</h3>
-        			<h5>Logos</h5>
-	        		<div>
+        			<h5 id="mySlideToggler">Logos</h5>
+	        		<div id="mySlideContent">
 	        			<a href="img/logo/LVSwoosh2.png" rel="shadowbox[logos]" title="LakeView Day Camp Alternate Logo"><img src="img/logo/LVSwoosh2-thumbnail.png"/></a>
 	        			<a href="img/logo/PSPlogo3.svg" rel="shadowbox[logos]" title="Princeton Square Press"><img src="img/logo/PSPlogo3-thumbnail.svg"/></a>
 	        			<a href="img/logo/Logo-Updated.png" rel="shadowbox[logos]" title="LakeView Logo Updated"><img src="img/logo/Logo-Updated-thumbnail.png"/></a>
 	        			<a href="img/logo/Milltown-Mudders-Logo.jpg" rel="shadowbox[logos]" title="Milltown Mudders Logo"><img src="img/logo/Milltown-Mudders-Logo-thumbnail.jpg" /></a>
+	        			<span class="collapse"><b>CLOSE</b></span>
 	        		</div>
         			<h5>Print</h5>
         			<div>
@@ -108,6 +103,7 @@
        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/shadowbox-3.0.3/shadowbox.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vendor/jquery.smooth-scroll.min.js"></script>
