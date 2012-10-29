@@ -20,15 +20,6 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
 
 
 /*
@@ -43,14 +34,16 @@ textarea {
 }
 
 body{
+	max-width:1180px;
+	min-width: 810px;
 	background: #060606 ;
 	font-size: 1em;
     line-height: 1.4;
 }
 
 header{
+	margin-top:0px;
 	height: 500px;
-	background: #008000; 
 	background-image: url('../img/tea.png');
 	background-repeat: no-repeat;
 }
@@ -61,35 +54,145 @@ header{
 body{
 	color: #F0F0F0;
 }
+
 h1{
-	
-	text-align: center;
 	font-size: 45px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: italic;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5{
 	font-family: 'Arvo', serif;
 }
 
-p, a {
+p, a{
 	font-family: 'Ubuntu', sans-serif;
 }
 
-
-/*
- * 
- */
-
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
+a{
+	font-weight:bold;
 }
+
+a:visited{
+	color:inherit;
+}
+
+
+/*
+ * Top banner
+ */
+#banner{
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(35,35,35,0) 26%, rgba(73,73,73,0.8) 55%, rgba(73,73,73,1) 99%, rgba(73,73,73,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(26%,rgba(35,35,35,0)), color-stop(55%,rgba(73,73,73,0.8)), color-stop(99%,rgba(73,73,73,1)), color-stop(100%,rgba(73,73,73,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(35,35,35,0) 26%,rgba(73,73,73,0.8) 55%,rgba(73,73,73,1) 99%,rgba(73,73,73,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(35,35,35,0) 26%,rgba(73,73,73,0.8) 55%,rgba(73,73,73,1) 99%,rgba(73,73,73,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(35,35,35,0) 26%,rgba(73,73,73,0.8) 55%,rgba(73,73,73,1) 99%,rgba(73,73,73,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(35,35,35,0) 26%,rgba(73,73,73,0.8) 55%,rgba(73,73,73,1) 99%,rgba(73,73,73,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#494949',GradientType=1 ); /* IE6-9 */
+    -moz-border-radius: 0px 0px 6px 0px;
+    -webkit-border-radius: 0px 0px 6px 0px;
+    -khtml-border-radius: 0px 0px 6px 0px;
+    border-radius: 0px 0px 6px 0px;
+}
+
+#banner h1{
+	font-size: 32px;
+	margin-left: 57px;
+	display: inline;
+}
+
+#banner nav{
+	display: inline;
+	padding-left: 70px;
+}
+
+#banner a{
+	padding: 4.5%;
+	line-height: 0px;
+	text-decoration:none;
+}
+
+#toggler-side_blocks{
+	color:#999999;
+	text-shadow: 1px -1px #336699;
+}
+
+#toggler-side_blocks:hover{
+	color:#336699;
+	text-shadow: 1px -1px #999999;
+}
+
+#toggler-person{
+	color:#999999;
+	text-shadow: 1px -1px #CC66CC; /*9900CC-Bright pink/purple */
+}
+
+#toggler-person:hover{
+	color:#CC66CC;
+	text-shadow: 1px -1px #999999;
+}
+
+#banner a[href^="http"]{
+	margin-left: 10px;
+	padding-left: 25px;
+	padding-right: 5px;
+	text-shadow: 1px -1px #333333;
+	color:#666666;
+	text-decoration:none;
+}
+
+#banner a[href^="http"]:hover{
+	color:#66CC66;
+	text-shadow: 2px -2px #333333;
+	background-image: url('../img/twitter.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/*
+ *  Quote
+ */
+#quote {
+	margin: 70px 26px;
+	width: 140px;
+}
+
+#quote p{
+	text-align:center;
+	font-family: 'Merienda One', cursive;
+	font-size: 20px;
+}
+
+/*
+ * Design Side Blocks
+ */
+
+#side_blocks{
+	float:right;
+	margin-right:25px;
+	margin-top: 35px;
+}
+
+#side_blocks h5{
+	-moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    padding: 1px 3px;
+    text-align: center;
+}
+
+#toggler-logos{
+	background:#008000;
+	
+}
+
+
+
+
+
+
+
 
 
 /*
@@ -103,13 +206,36 @@ img {
 }
 .sliderExpanded .collapseSlider{
 	display:block;
+	
+}
+/* Uncomment this to hide the slider when content is expanded*/
+.sliderExpanded .expandSlider{
+	/*display:none;*/
+	background: #060606;
 }
 
-/* Uncomment this to hide the slider when content is expanded
-.sliderExpanded .expandSlider{
-	display:none;
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
-*/
+
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
