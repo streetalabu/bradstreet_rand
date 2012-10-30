@@ -43,8 +43,8 @@ body{
 
 header{
 	margin-top:0px;
-	height: 500px;
-	background-image: url('../img/tea.png');
+	height: 700px;
+	background-image: url('../img/tea2.png');
 	background-repeat: no-repeat;
 }
 
@@ -59,18 +59,22 @@ h1{
 	font-size: 45px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: italic;
+	color: #999999;
+	text-shadow: 1px 1px 1px #0066CC;
 }
 
-h2, h3, h4, h5{
+h2{
+	font-size: 30px;
+	color:#999999;
+	text-shadow: 1px 1px 1px #0066CC;
+}
+
+p{
 	font-family: 'Arvo', serif;
 }
 
-p, a{
+ a, h2, h3, h4, h5{
 	font-family: 'Ubuntu', sans-serif;
-}
-
-a{
-	font-weight:bold;
 }
 
 a:visited{
@@ -97,7 +101,7 @@ a:visited{
 
 #banner h1{
 	font-size: 32px;
-	margin-left: 57px;
+	margin-left: 64px;
 	display: inline;
 }
 
@@ -107,29 +111,31 @@ a:visited{
 }
 
 #banner a{
-	padding: 4.5%;
+	padding-left: 4.1%;
+	padding-right: 4.1%;
 	line-height: 0px;
+	font-size: 18px;
 	text-decoration:none;
 }
 
 #toggler-side_blocks{
 	color:#999999;
-	text-shadow: 1px -1px #336699;
+	text-shadow: 1px 1px #339933;
 }
 
 #toggler-side_blocks:hover{
-	color:#336699;
-	text-shadow: 1px -1px #999999;
+	color:#339933;
+	text-shadow: 1px 1px #999999;
 }
 
 #toggler-person{
 	color:#999999;
-	text-shadow: 1px -1px #CC66CC; /*9900CC-Bright pink/purple */
+	text-shadow: 1px 1px #CC66CC; /*9900CC-Bright pink/purple */
 }
 
 #toggler-person:hover{
 	color:#CC66CC;
-	text-shadow: 1px -1px #999999;
+	text-shadow: 1px 1px #999999;
 }
 
 #banner a[href^="http"]{
@@ -153,8 +159,9 @@ a:visited{
  *  Quote
  */
 #quote {
-	margin: 70px 26px;
+	margin: 168px 0px 0px 12px;
 	width: 140px;
+	float:left;
 }
 
 #quote p{
@@ -169,8 +176,8 @@ a:visited{
 
 #side_blocks{
 	float:right;
-	margin-right:25px;
-	margin-top: 35px;
+	margin-right:5px;
+	margin-top: 30px;
 }
 
 #side_blocks h5{
@@ -178,20 +185,89 @@ a:visited{
     -webkit-border-radius: 6px 6px 6px 6px;
     -khtml-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
-    padding: 1px 3px;
+    padding: 0px 3px 30px 3px;
     text-align: center;
+
+}
+
+
+#side_blocks .sliderExpanded{
+	text-shadow: 2px 1px #666666 ;
+}
+
+.toggler, .closeSlider{
+	cursor:pointer;
 }
 
 #toggler-logos{
-	background:#008000;
+
+	text-shadow: 1px 1px #FF6600 ;
 	
 }
 
+#toggler-logos.sliderExpanded{
+	background: url('../img/BRlogo.svg') no-repeat bottom center;
+}
+
+#toggler-print{
+	text-shadow: 1px 1px #663300 ;	
+}
+
+#toggler-print.sliderExpanded{
+	background: url('../img/ink.svg') no-repeat bottom center;
+}
+
+#toggler-digital{
+	text-shadow: 1px 1px #006633 ;
+}
+
+#toggler-digital.sliderExpanded{
+	background: url('../img/digital.svg') no-repeat bottom center;
+}
+
+#toggler-database{
+	text-shadow: 1px 1px #FF33CC ;
+}
+
+#toggler-database.sliderExpanded{
+	background: url('../img/database.svg') no-repeat bottom center;
+}
+
+#toggler-events{
+	text-shadow: 1px 1px #3366FF ;
+}
+
+#toggler-events.sliderExpanded{
+	background: url('../img/events.svg') no-repeat bottom center;
+}
+
+#toggler-projects{
+	text-shadow: 1px 1px #3300CC ;
+}
+
+#toggler-projects.sliderExpanded{
+	background: url('../img/projects.svg') no-repeat bottom center;
+}
+
+/*
+ * Design content main area
+ */
+
+#design_content{
+	float:left;
+	margin-left:18%;
+	margin-top:35px;
+	width:50%;
+}
 
 
+/*
+ * Personal 
+ */
 
-
-
+#person{
+	margin-left: 12px;
+}
 
 
 
@@ -206,14 +282,13 @@ a:visited{
 }
 .sliderExpanded .collapseSlider{
 	display:block;
-	
-}
-/* Uncomment this to hide the slider when content is expanded*/
-.sliderExpanded .expandSlider{
-	/*display:none;*/
 	background: #060606;
 }
-
+/* Uncomment this to hide the slider when content is expanded
+.sliderExpanded .expandSlider{
+	display:none;
+}
+*/
 
 /*
  * Remove default fieldset styles.
