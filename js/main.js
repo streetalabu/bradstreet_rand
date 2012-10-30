@@ -14,6 +14,11 @@ function toggleSlides(){
 				var relatedToggler='toggler-'+$(this).parent().attr('id');
 				$('#'+relatedToggler).removeClass('sliderExpanded');
 		});
+		$('.closeSlider_person').click(function(){
+				$(this).parent().parent().hide('slow');
+				var relatedToggler='toggler-'+$(this).parent().parent().attr('id');
+				$('#'+relatedToggler).removeClass('sliderExpanded');
+		});
 	});
 };
 $(function(){
